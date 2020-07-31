@@ -50,4 +50,19 @@ describe('snowpack-plugin-mdx', () => {
     const result = await plugin.load({contents, filePath})
     expect(result).toBeNull()
   })
+
+  it('should forward svgr options', async () => {
+    const filePath = path.join(__dirname, '__fixtures__/test.svg')
+    const contents = await fs.readFile(filePath, 'utf-8')
+    const plugin = snowpackPluginSvgr(
+      {},
+      {
+        svgrOptions: {
+          ref: true,
+        },
+      }
+    )
+    const result = await plugin.load({contents, filePath})
+    expect(result['.js']).toMatchSnapshot('.js')
+  })
 })
