@@ -8,6 +8,9 @@
   "license": "MIT",
   "description": "Use svgr to transform your SVGs into React components with Snowpack",
   "keywords": [
+    "snowpack plugin",
+    "svgr",
+    "svgr snowpack plugin",
     "snowpack plugin svgr"
   ],
   "main": "dist/main/index.js",
