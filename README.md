@@ -5,7 +5,7 @@
 > Use svgr to transform your SVGs into React components with Snowpack
 
 ```sh
-npm i snowpack-plugin-svgr
+npm i -D snowpack-plugin-svgr
 ```
 
 <p>
