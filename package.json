@@ -110,9 +110,9 @@
     "bracketSpacing": false
   },
   "devDependencies": {
-    "@lunde/create-pkg": "^1.6.3",
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
+    "@types/jest": "latest",
     "babel-jest": "latest",
     "cli-confirm": "latest",
     "cz-conventional-changelog": "latest",
@@ -124,7 +124,6 @@
     "lundle": "latest",
     "prettier": "latest",
     "standard-version": "latest",
-    "@types/jest": "latest",
     "typescript": "latest"
   },
   "dependencies": {},
