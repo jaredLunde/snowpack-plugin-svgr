@@ -55,6 +55,7 @@ interface SnowpackPluginSvgrOptions {
   babelOptions?: TransformOptions
   /**
    * These options are passed directly to `@svgr/core`'s `convert()` function
+   * See: https://react-svgr.com/docs/options/
    */
   svgrOptions?: any
 }
