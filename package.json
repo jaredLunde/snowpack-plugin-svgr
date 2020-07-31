@@ -12,7 +12,6 @@
   ],
   "main": "dist/main/index.js",
   "module": "dist/module/index.js",
-  "unpkg": "dist/umd/snowpack-plugin-svgr.js",
   "source": "src/index.ts",
   "types": "types/index.d.ts",
   "exports": {
@@ -20,7 +19,6 @@
       "browser": "./dist/module/index.js",
       "import": "./dist/esm/index.mjs",
       "require": "./dist/main/index.js",
-      "umd": "./dist/umd/snowpack-plugin-svgr.js",
       "source": "./src/index.ts",
       "types": "./types/index.d.ts",
       "default": "./dist/main/index.js"
@@ -126,6 +124,15 @@
     "standard-version": "latest",
     "typescript": "latest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/plugin-transform-react-constant-elements": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "@rollup/pluginutils": "^3.1.0",
+    "@svgr/core": "^5.4.0",
+    "@svgr/plugin-jsx": "^5.4.0",
+    "@svgr/plugin-svgo": "^5.4.0"
+  },
   "peerDependencies": {}
 }

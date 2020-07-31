@@ -34,18 +34,34 @@ npm i -D snowpack-plugin-svgr
 ## Quick start
 
 ```js
-import _ from 'snowpack-plugin-svgr'
+// snowpack.config.json
+{
+  "plugins": [["snowpack-plugin-svgr", { /* see "Plugin Options" below */ }]]
+}
 ```
 
-## API
+#### Plugin Options
 
-### someFunction()
-
-#### Arguments
-
-| Name | Type | Default | Required? | Description |
-| ---- | ---- | ------- | --------- | ----------- |
-|      |      |         |           |             |
+```typescript
+interface SnowpackPluginSvgrOptions {
+  /**
+   * Includes only the  specified paths
+   */
+  include?: string[]
+  /**
+   * Excludes the specified paths
+   */
+  exclude?: string[]
+  /**
+   * These options are passed directly to babel.transformAsync()
+   */
+  babelOptions?: TransformOptions
+  /**
+   * These options are passed directly to `@svgr/core`'s `convert()` function
+   */
+  svgrOptions?: any
+}
+```
 
 ## LICENSE
 
