@@ -2,16 +2,13 @@
 
 # snowpack-plugin-svgr
 
-> Use svgr to transform your SVGs into React components with Snowpack
+> Use [svgr](https://github.com/gregberge/svgr) to transform your SVGs into React components with Snowpack
 
 ```sh
 npm i -D snowpack-plugin-svgr
 ```
 
 <p>
-  <a href="https://bundlephobia.com/result?p=snowpack-plugin-svgr">
-    <img alt="Bundlephobia" src="https://img.shields.io/bundlephobia/minzip/snowpack-plugin-svgr?style=for-the-badge&labelColor=24292e">
-  </a>
   <a aria-label="Types" href="https://www.npmjs.com/package/snowpack-plugin-svgr">
     <img alt="Types" src="https://img.shields.io/npm/types/snowpack-plugin-svgr?style=for-the-badge&labelColor=24292e">
   </a>
