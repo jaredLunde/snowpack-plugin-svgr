@@ -61,6 +61,15 @@ interface SnowpackPluginSvgrOptions {
 }
 ```
 
+## Usage
+
+```js
+import CatIcon from './assets/icons/cat.svg'
+
+// Use like you would an `<svg>` component
+<CatIcon />
+```
+
 #### Adding types to a TypeScript app
 
 In `types/static.d.ts`
