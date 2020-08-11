@@ -61,6 +61,27 @@ interface SnowpackPluginSvgrOptions {
 }
 ```
 
+#### Adding types to a TypeScript app
+
+In `types/static.d.ts`
+
+```typescript
+// Replace this
+declare module '*.svg' {
+  const ref: string
+  export default ref
+}
+
+// With this
+declare module '*.svg' {
+  const ref: React.RefForwardingComponent<
+    SVGSVGElement,
+    React.SVGAttributes<SVGSVGElement>
+  >
+  export default ref
+}
+```
+
 ## LICENSE
 
 MIT
